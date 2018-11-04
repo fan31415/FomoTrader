@@ -568,7 +568,7 @@ def handle_bar(counter,  # a counter for number of minute bars that have already
     buy_in, borrow_in = False, False
     for asset_idx in USE_ASSET_INDEX:
         #
-        if counter % TRADE_INTERVAL == 0:
+        if counter % TRADE_INTERVAL != 0:
             continue
 
 
